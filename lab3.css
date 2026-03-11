@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('Festive\ balloon\ and\ gift\ celebration.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+
+}
+
+header h1 {
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    background-color: rgb(106, 138, 186);
+    border: 0.2rem solid white;
+    width: 40%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: aliceblue;
+    box-shadow: 15px 17px 24px rgb(106, 138, 186);
+
+
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#div-form {
+    padding: 2rem;
+    background-color: rgb(126, 154, 195);
+    text-align: center;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid white;
+    color: aliceblue;
+
+
+}
+
+#div-form p {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+
+input {
+    background-color: rgb(54, 196, 199);
+    padding: 1rem;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    width: 60%;
+    outline: none;
+    transition: 0.7s;
+    color: white;
+    font-weight: 900;
+}
+
+input:hover {
+    background-color: rgb(55, 92, 152);
+
+}
+
+
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 16rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+footer li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 0.5rem;
+    background-color: rgb(13, 42, 87);
+    margin-left: 0.3rem;
+    color: aliceblue;
+    border: 0.2rem solid rgb(29, 29, 91);
+    transition: 0.5s;
+}
+
+footer li:hover {
+    background-color: rgb(151, 165, 190);
+    color: rgb(29, 29, 91);
+}
