@@ -1,22 +1,38 @@
-let li_s = document.querySelectorAll("ul li")
+document.addEventListener("DOMContentLoaded", () => {
 
-li_s.forEach((element) => {
+    let li_s = document.querySelectorAll("ul li");
 
-    element.addEventListener("click", () => {
-        if (element.textContent == '1') {
-            window.location.href = 'index.html'
-        }
-        else if (element.textContent == '2') {
-            window.location.href = 'lab2.html'
-        }
-        else if (element.textContent == '3') {
-            window.location.href = 'lab3.html'
-        }
+    li_s.forEach((element) => {
 
-    })
+        element.addEventListener("click", () => {
+
+            const value = element.textContent.trim();
+
+            if (value == '1') {
+                window.location.href = 'index.html';
+            }
+            else if (value == '2') {
+                window.location.href = 'lab2.html';
+            }
+            else if (value == '3') {
+                window.location.href = 'lab3.html';
+            }
+            else if (value == '4') {
+                window.location.href = 'lab4.html';
+            }
+            else if (value == '5') {
+                window.location.href = 'lab5.html';
+            }
+            else if (value == '6') {
+                window.location.href = 'lab6.html';
+            }
 
 
-})
+        });
+
+    });
+
+});
 
 
 
@@ -56,5 +72,6 @@ date.addEventListener("input", () => {
     }
     out.value = `Sizin yaşayırsınız: ${ageYears} il, ${ageMonths} ay, ${ageDays} gün`;
 });
+
 
 
