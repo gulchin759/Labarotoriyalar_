@@ -27,3 +27,60 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+const num1 = document.getElementById("num1");
+const num2 = document.getElementById("num2");
+const result = document.getElementById("result");
+
+const opButtons = document.querySelectorAll("main button");
+const numberButtons = document.querySelectorAll("footer li");
+
+let activeInput = num1;
+
+
+num1.addEventListener("focus", () => activeInput = num1);
+num2.addEventListener("focus", () => activeInput = num2);
+
+
+numberButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        activeInput.value += btn.innerText;
+    });
+});
+
+
+opButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const a = parseFloat(num1.value);
+        const b = parseFloat(num2.value);
+        const op = btn.innerText;
+
+        if (isNaN(a) || isNaN(b)) {
+            result.value = "Error";
+            return;
+        }
+
+        let res;
+
+        switch (op) {
+            case "+":
+                res = a + b;
+                break;
+            case "-":
+                res = a - b;
+                break;
+            case "*":
+                res = a * b;
+                break;
+            case "/":
+                res = b !== 0 ? a / b : "∞";
+                break;
+            case "%":
+                res = (a / 100) * b;
+                break;
+        }
+
+        result.value = res;
+    });
+});

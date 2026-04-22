@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
             else if (value == '6') {
                 window.location.href = 'lab6.html';
             }
+            else if (value == '7') {
+                window.location.href = 'lab7.html';
+            }
+            else if (value == '8') {
+                window.location.href = 'lab8.html';
+            }
 
 
         });

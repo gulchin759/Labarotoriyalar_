@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 1_2</title>
+    <link rel="stylesheet" href="lab4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-[url('https://img.freepik.com/premium-photo/detailed-closeup-numeric-keypad-old-calculator-device_908344-219674.jpg?semt=ais_hybrid&w=740&q=80')] bg-cover bg-center">
+
+
+
+    <main class="flex items-center justify-center bg-orange mt-6 ">
+
+        <div class="flex flex-col items-center gap-4 bg-orange-800/80 p-8 rounded-2xl shadow-lg ">
+
+            <label class="bg-white text-black font-bold px-3 py-1 rounded">
+                Number 1:
+            </label>
+
+            <input id="num1" type="text"
+                class="border p-2 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400 w-40 text-center" />
+
+            <label class="bg-white text-black font-bold px-3 py-1 rounded">
+                Number 2:
+            </label>
+
+            <input id="num2" type="text"
+                class="border p-2 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400 w-40 text-center" />
+
+            <div class="flex gap-2 mt-2">
+                <button
+                    class="bg-white text-black font-bold px-4 py-2 rounded-lg hover:bg-yellow-400 hover:text-white transition">+</button>
+                <button
+                    class="bg-white text-black font-bold px-4 py-2 rounded-lg hover:bg-yellow-400 hover:text-white transition">-</button>
+                <button
+                    class="bg-white text-black font-bold px-4 py-2 rounded-lg hover:bg-yellow-400 hover:text-white transition">*</button>
+                <button
+                    class="bg-white text-black font-bold px-4 py-2 rounded-lg hover:bg-yellow-400 hover:text-white transition">/</button>
+                <button
+                    class="bg-white text-black font-bold px-4 py-2 rounded-lg hover:bg-yellow-400 hover:text-white transition">%</button>
+            </div>
+
+            <input type="text" id="result"
+                class="border p-2 rounded-lg outline-none focus:ring-2 focus:ring-yellow-400 mt-4 w-40 text-center font-bold"
+                readonly placeholder="Result" />
+
+        </div>
+
+    </main>
+
+    <footer>
+        <ul class="flex mx-auto mt-8 mb-4 w-64 overflow-x-auto">
+
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-600 hover:text-yellow-50">
+                1
+            </li>
+
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-600 hover:text-yellow-50">
+                2
+            </li>
+
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-600 hover:text-yellow-50">
+                3
+            </li>
+
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-600 hover:text-yellow-50">
+                4
+            </li>
+
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-600 hover:text-yellow-50">
+                5
+            </li>
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-600 hover:text-yellow-50">
+                6
+            </li>
+
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-600 hover:text-yellow-50">
+                7
+            </li>
+
+            <li
+                class="flex-shrink-0 px-4 py-4 text-xl font-black text-pink-950 rounded-lg bg-yellow-500 border-2 border-yellow-950 text-pink-50 transition duration-500 hover:bg-yellow-300 hover:text-yellow-50">
+                8
+            </li>
+
+
+
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+    <script src="app6.js"></script>
+</body>
+
+</html>
