@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center bg-amber-800 ">
+            <a href="#" class="text-2xl font-bold text-white font-serif">📚Köhnə Səhifələr</a>
+
+            <div class="hidden md:flex space-x-10 text-[#2b2b2b] font-medium font-serif tracking-wide">
+
+                <a href="#" class="relative group hover:tracking-widest transition-all duration-300 text-white">
+                    Ana Səhifə
+                    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white
+                 group-hover:w-full transition-all duration-300 "></span>
+                </a>
+
+                <a href="#" class="relative group hover:tracking-widest transition-all duration-300 text-white">
+                    Kateqoriyalar
+                    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white
+                 group-hover:w-full transition-all duration-300"></span>
+                </a>
+
+                <a href="#" class="relative group hover:tracking-widest transition-all duration-300 text-white">
+                    Yeni Gələnlər
+                    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white
+                 group-hover:w-full transition-all duration-300"></span>
+                </a>
+
+                <a href="#" class="relative group hover:tracking-widest transition-all duration-300 text-white">
+                    Haqqımızda
+                    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white
+                 group-hover:w-full transition-all duration-300"></span>
+                </a>
+
+            </div>
+
+            <div class="flex items-center space-x-5">
+                <button class="text-white hover:text-white"><i
+                        class="fa-solid fa-magnifying-glass text-xl"></i></button>
+                <button class="text-white hover:text-white relative">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span
+                        class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </button>
+                <button class="text-white hover:text-white"><i class="fa-solid fa-user text-xl"></i></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <header
+        class="bg-[#f5f1e8] py-24 relative overflow-hidden text-white bg-[url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=1400')] bg-cover bg-center">
+
+        <div
+            class="absolute inset-0 opacity-20 bg-[radial-gradient(#c9c2b6_1px,transparent_1px)] bg-[length:18px_18px]">
+        </div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 font-serif tracking-wide text-white">
+                Oxumaq Azadlıqdır
+            </h1>
+
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-white font-bold italic ">
+                Minlərlə kitab arasından öz dünyanı kəşf et və düşüncəni genişləndir.
+            </p>
+
+            <button
+                class="border-none px-10 py-3 uppercase tracking-widest text-sm font-medium bg-[#f5f1e8] text-[#2b2b2b] rounded-lg  hover:bg-[#2b2b2b] hover:text-[#f5f1e8] transition duration-300">
+                İndi Kəşf Et
+            </button>
+
+        </div>
+    </header>
+
+
+
+
+    <main class="container mx-auto px-6 py-12">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <!-- 1 -->
+            <div
+                class="relative w-80 bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0] border border-[#2b2b2b]/20 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition duration-500 group">
+
+                <button id="favBtn"
+                    class="absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://mir.az/uploads/posts/2024-03/670343b316_Mir.az-68863263.webp"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-[#2b2b2b]">Ölülər</h3>
+                    <p class="text-sm italic text-[#555]">Cəlil Məmmədquluzadə</p>
+
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="font-bold text-[#2b2b2b]">6 AZN</span>
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm hover:bg-black transition">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2 -->
+            <div
+                class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0] border border-[#2b2b2b]/20 rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 group">
+                <button
+                    class="absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://www.qanun.az/images/news/compressed/2021-11-18-11-59-421637222382.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                        Hekayələr
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        Mirzə Fətəli Axundov
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            7 AZN
+                        </span>
+
+                        <button
+                            class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 3 -->
+            <div
+                class="relative bg-[#f5f1e8] border border-[#2b2b2b]/20 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                <button
+                    class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://qebulol.az/wp-content/uploads/2025/07/53001527_307624673146096_6212334855502430208_n.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="p-4">
+                    <h3 class="font-bold text-[#2b2b2b]">İblis</h3>
+                    <p class="text-sm italic text-[#555]">Hüseyn Cavid</p>
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="text-sm font-bold text-[#2b2b2b]">8 AZN</span>
+                        <button
+                            class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 4 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://qebulol.az/wp-content/uploads/2025/09/x%C9%99ms%C9%992.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+                    <h3 class="font-bold text-[#2b2b2b] text-lg">Xəmsə</h3>
+                    <p class="text-sm italic text-[#555]">Nizami Gəncəvi</p>
+
+
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="text-sm font-bold text-[#2b2b2b]">13 AZN</span>
+                        <button
+                            class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://azertag.az/files/2019/3/1200x630/15742480336434356864_1200x630.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+                    <h3 class="font-bold text-[#2b2b2b] text-lg">Aygün</h3>
+                    <p class="text-sm italic text-[#555]">Səməd Vurğun</p>
+
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="text-sm font-bold text-[#2b2b2b]">6 AZN</span>
+                        <button
+                            class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://litres.az/pub/c/cover/68863458.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+                    <h3 class="font-bold text-[#2b2b2b] text-lg">Hophopnamə</h3>
+                    <p class="text-sm italic text-[#555]">Mirzə Ələkbər Sabir</p>
+
+                    <div class="flex justify-between items-center mt-3">
+                        <span class="text-sm font-bold text-[#2b2b2b]">7 AZN</span>
+                        <button
+                            class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://strgimgr.b-cdn.net/sized/840/826041-b36f36fc25f69beea2b13fe0386242b2.jpg?width=384&height=384&quality=90"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b]">
+                        Danabaş kəndinin əhvalatı
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        C.Məmmədquluzadə
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            6 AZN
+                        </span>
+
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://www.qanun.az/images/news/compressed/2022-02-01-08-35-101643690110.png"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                        Bahadır və Sona
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        Nəriman Nərimanov
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            7 AZN
+                        </span>
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 9 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://imgv2-1-f.scribdassets.com/img/document/804631060/original/9379fe6bf0/1?v=1"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b]">
+                        Seçilmiş şeirlər
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        Abbas Səhhət
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            5 AZN
+                        </span>
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 10 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+                <!-- ❤️ FAVORITE -->
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://static.insales-cdn.com/r/XQg-As9uSp0/rs:fit:1140:1140:1/q:80/plain/images/products/1/3159/649096279/SHEYX_SENAN_qapaq.jpg@webp"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b]">
+                        Şeyx Sənan
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        Hüseyn Cavid
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            8 AZN
+                        </span>
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 11 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+    border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+    shadow-sm hover:shadow-2xl transition duration-500 group">
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://www.balalar.az/e-shop/img/p/287-1028-large.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b]">
+                        Seçilmiş satiralar
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        Mirzə Ələkbər Sabir
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            6 AZN
+                        </span>
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 12 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+shadow-md hover:shadow-2xl transition duration-500 group">
+
+
+                <button class="favBtn absolute top-3 right-3 z-10bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://upload.wikimedia.org/wikipedia/az/f/f0/Nizami_Leyli_v%C9%99_M%C9%99cnun.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                        Leyli və Məcnun
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        Nizami Gəncəvi
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            9 AZN
+                        </span>
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+shadow-md hover:shadow-2xl transition duration-500 group">
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+
+                <img src="https://strgimgr.b-cdn.net/img/product/280/86fbe2eb-3685-4f60-a2db-aa9154920f05.jpeg?quality=80"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                        Molla İbrahimxəlil Kimyagər
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        M.F.Axundov
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            7 AZN
+                        </span>
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 14 -->
+
+            <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+shadow-md hover:shadow-2xl transition duration-500 group">
+
+
+                <button class="favBtn absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                    🤍
+                </button>
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Poster_of_Vagif_play_%28Kirovabad_State_Theater%2C_1939%29.jpg"
+                    class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+
+                <div class="p-4">
+
+                    <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                        Vaqif
+                    </h3>
+
+                    <p class="text-sm italic text-[#555]">
+                        Səməd Vurğun
+                    </p>
+
+                    <div class="flex justify-between items-center mt-3">
+
+                        <span class="text-sm font-bold text-[#2b2b2b]">
+                            8 AZN
+                        </span>
+
+                        <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                            Səbətə at
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+    <section class="bg-white py-12 px-4">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl font-bold text-amber-900 mb-8 text-center">
+                Yeni Gələnlər
+            </h2>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+shadow-md hover:shadow-2xl transition duration-500 group">
+
+                    <button class="absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                        🤍
+                    </button>
+
+                    <img src="https://upload.wikimedia.org/wikipedia/az/5/5f/%C6%8Fli_v%C9%99_Nino_%28film%2C_2015%29.jpg"
+                        class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                            Əli və Nino
+                        </h3>
+
+                        <p class="text-sm italic text-[#555]">
+                            Qurban Səid
+                        </p>
+
+                        <div class="flex justify-between items-center mt-3">
+
+                            <span class="text-sm font-bold text-[#2b2b2b]">
+                                12 AZN
+                            </span>
+
+                            <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                                Səbətə at
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+shadow-md hover:shadow-2xl transition duration-500 group">
+
+
+                    <button class="absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                        🤍
+                    </button>
+
+                  
+                    <img src="https://upload.wikimedia.org/wikipedia/az/c/c9/Yeddi_g%C3%B6z%C9%99l_cover.png"
+                        class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                            Yeddi Gözəl
+                        </h3>
+
+                        <p class="text-sm italic text-[#555]">
+                            Nizami Gəncəvi
+                        </p>
+
+                        <div class="flex justify-between items-center mt-3">
+
+                            <span class="text-sm font-bold text-[#2b2b2b]">
+                                10 AZN
+                            </span>
+
+                            <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                                Səbətə at
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+shadow-md hover:shadow-2xl transition duration-500 group">
+
+                 
+                    <button class="absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                        🤍
+                    </button>
+
+                    <img src="https://static.insales-cdn.com/images/products/1/585/2903720521/8b92f7249e807501027e1970637859df.png"
+                        class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                            Varlı Ata, Kasıb Ata
+                        </h3>
+
+                        <p class="text-sm italic text-[#555]">
+                            Robert Kiyosaki
+                        </p>
+
+                        <div class="flex justify-between items-center mt-3">
+
+                            <span class="text-sm font-bold text-[#2b2b2b]">
+                                18 AZN
+                            </span>
+
+                            <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                                Səbətə at
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="relative bg-gradient-to-br from-[#f5f1e8] via-[#efe2c8] to-[#e7d3b0]
+border border-[#2b2b2b]/20 rounded-xl overflow-hidden
+shadow-md hover:shadow-2xl transition duration-500 group">
+
+                    <!-- Favorite button -->
+                    <button class="absolute top-3 right-3 z-10 bg-amber-800/80 backdrop-blur
+        p-2 rounded-full shadow hover:scale-110 transition text-xl">
+                        🤍
+                    </button>
+
+                    <img src="https://static.insales-cdn.com/r/Bgi2kMrE6XA/rs:fit:570:570:1/q:80/plain/images/products/1/5234/197112946/Qara_kohlen_06.jpg@jpg"
+                        class="h-80 w-full object-cover group-hover:scale-105 transition duration-700">
+
+                    <div class="p-4">
+
+                        <h3 class="font-bold text-lg text-[#2b2b2b] group-hover:tracking-wide transition">
+                            Qara Köhlən
+                        </h3>
+
+                        <p class="text-sm italic text-[#555]">
+                            Anna Syuell
+                        </p>
+
+                        <div class="flex justify-between items-center mt-3">
+
+                            <span class="text-sm font-bold text-[#2b2b2b]">
+                                10 AZN
+                            </span>
+
+                            <button class="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm
+                hover:bg-black hover:scale-105 transition">
+                                Səbətə at
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+    </section>
+
+
+
+    <section class="bg-amber-900 py-12 px-4 text-white">
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+
+            <div class="bg-white text-black p-6 rounded-2xl shadow-lg">
+
+                <h2 class="text-2xl font-bold text-amber-900 mb-4">
+                    Haqqımızda
+                </h2>
+
+                <p class="text-gray-700 mb-3 leading-relaxed">
+                    Biz kitab sevərləri bir araya gətirən onlayn platformayıq.
+                    Məqsədimiz oxuculara müxtəlif janrlarda kitabları rahat şəkildə təqdim etməkdir.
+                </p>
+
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    Müştəri məmnuniyyəti bizim üçün önəmlidir və sifarişləri
+                    sürətli və təhlükəsiz şəkildə çatdırırıq.
+                </p>
+
+                <div class="rounded-xl overflow-hidden">
+                    <iframe src="https://www.google.com/maps?q=Baku&output=embed" width="100%" height="200"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+
+            <div class="bg-white text-black p-6 rounded-2xl shadow-lg">
+
+                <h2 class="text-2xl font-bold text-amber-900 mb-4">
+                    Rəy əlavə et
+                </h2>
+
+                <form class="flex flex-col gap-4">
+
+
+                    <input type="text" placeholder="Adınız"
+                        class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-900"
+                        required>
+
+
+                    <input type="text" placeholder="Yaşadığınız yer (məs: Bakı)"
+                        class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-900"
+                        required>
+
+
+                    <textarea placeholder="Rəyinizi yazın..." rows="4"
+                        class="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-900"
+                        required></textarea>
+
+                    <button type="submit"
+                        class="bg-amber-900 text-white py-3 rounded-lg hover:bg-amber-800 transition duration-300">
+                        Göndər
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-[#2b2b2b] text-[#f5f1e8] py-14 mt-16 relative overflow-hidden">
+
+        <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(#f5f1e8_1px,transparent_1px)] [background-size:20px_20px]">
+        </div>
+
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
+
+       
+            <div>
+                <h4 class="text-2xl font-bold mb-4 tracking-wide">
+                    📚 Köhnə Səhifələr
+                </h4>
+                <p class="text-sm leading-6 opacity-80">
+                    Azərbaycan ədəbiyyatının klassik ruhunu yaşadan kitab mağazası.
+                    Oxumaq — düşünməkdir.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 border-b border-[#f5f1e8]/20 pb-2">
+                    Sürətli Keçidlər
+                </h4>
+
+                <ul class="space-y-3 text-sm">
+                    <li><a class="hover:tracking-widest transition" href="#">Qaydalar və Şərtlər</a></li>
+                    <li><a class="hover:tracking-widest transition" href="#">Çatdırılma</a></li>
+                    <li><a class="hover:tracking-widest transition" href="#">Geri qaytarılma</a></li>
+                </ul>
+            </div>
+
+    
+            <div>
+                <h4 class="text-lg font-semibold mb-4 border-b border-[#f5f1e8]/20 pb-2">
+                    Bizimlə Əlaqə
+                </h4>
+
+                <p class="text-sm mb-4 opacity-80">
+                    Email: info@kitabdunyasi.az
+                </p>
+
+                <div class="flex gap-5 text-xl">
+                    <a href="#" class="hover:scale-110 transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:scale-110 transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="text-center mt-12 pt-6 border-t border-[#f5f1e8]/20 text-xs tracking-widest opacity-70 relative z-10">
+            © 2026 Köhnə Səhifələr. Bütün hüquqlar qorunur.
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
